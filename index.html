@@ -52,7 +52,7 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/foto kemaja hitam WO.jpg" alt="Bunga" width="200" class="rounded-circle img-thumbnail" />
+      <img src="img/WhatsApp Image 2025-07-23 at 22.11.17_f2b73060.jpg" alt="Bunga" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Bunga Clara October</h1>
       <p class="lead">Pelajar | Sekolah</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -103,15 +103,31 @@
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/project/p1.jpg" class="card-img-top img-project" alt="Projects 1" />
+              <img src="img/Project/toko anjing.jpg" class="card-img-top img-project" alt="Projects 1" />
               <div class="card-body">
-                <p class="card-text">Project pembuatan website yang isinya bisa menampilkan dan mengatur data pengguna, dibuat dengan PHP dan disimpan di database.</p>
+                <p class="card-text">Membuat website yang tampilannya seperti shopee,terdiri foto produk yang dijual, deskripsi singkat,dengan menggunakan bootstrap sebagai media utama.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/project/p2.jpg" class="card-img-top img-project" alt="Projects 2" />
+              <img src="img/Project/WhatsApp Image 2025-07-23 at 21.52.53_4b113035.jpg" class="card-img-top img-project" alt="Projects 2" />
+              <div class="card-body">
+                <p class="card-text">Membuat Inventaris Film dengan menggunakan mySQL, berisikan beberapa pilihan film sesuai dengan genre, tiket pemesanan, tahun terbit, sutradara, dan harga.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/Project/kakulator.jpg" class="card-img-top img-project" alt="Projects 3" />
+              <div class="card-body">
+                <p class="card-text">Membuat kalkulator sederhana menggunakan thunkable.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/Project/pppp.png" class="card-img-top img-project" alt="Projects 4" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
@@ -119,23 +135,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/project/p33.jpg" class="card-img-top img-project" alt="Projects 3" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/project/p4.jpg" class="card-img-top img-project" alt="Projects 4" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/project/p5.jpg" class="card-img-top img-project" alt="Projects 5" />
+              <img src="img/Project/coding4.jpg" class="card-img-top img-project" alt="Projects 5" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
@@ -246,7 +246,7 @@
     </script>
 
     <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbzjWwvjJihKz3-24SxEnHM5XFjNPgQd_dv3uD_fgjLSp_4AAXsC6IC4C_ECvWyLkGsuBg/exec";
+      const scriptURL = "https://script.google.com/macros/s/AKfycbw_SyZYkn6GRTKgLJYd_kQmpSZDf82UfIKo4GrkirrjK7eqyECSkTgvUlExLJLrakRvbg/exec";
       const form = document.forms["wpu-contact-form"];
       const btnKirim = document.querySelector(".btn-kirim");
       const btnLoading = document.querySelector(".btn-loading");
@@ -254,18 +254,14 @@
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-        // ketika tombol submit diklik
-        // tampilkan tombol loading, hilangkan tombol kirim
+
         btnLoading.classList.toggle("d-none");
         btnKirim.classList.toggle("d-none");
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            // tampilkan tombol kirim, hilangkan tombol loading
             btnLoading.classList.toggle("d-none");
             btnKirim.classList.toggle("d-none");
-            // tampilkan alert
             myAlert.classList.toggle("d-none");
-            // reset formnya
             form.reset();
             console.log("Success!", response);
           })
@@ -279,6 +275,34 @@
         max: 35,
         speed: 1000,
         glare: true,
+      });
+    </script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbw_SyZYkn6GRTKgLJYd_kQmpSZDf82UfIKo4GrkirrjK7eqyECSkTgvUlExLJLrakRvbg/exec";
+      const form = document.forms["wpu-contact-form"];
+      const btnkirim = dokument.querySelector(".btn-kirim");
+      const btnloading = dokument.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // ketika tombl submit diklik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnkirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnkirim.classList.toggle("d-none");
+            // tampilkan alert
+            myAlert.classList.toggle("d-none");
+            // reset formnya
+            from.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
       });
     </script>
   </body>
